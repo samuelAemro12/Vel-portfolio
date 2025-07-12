@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, ArrowUp } from 'lucide-react';
+// import { Heart, ArrowUp } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
               </p>
               <div className="flex items-center text-sm text-neutral-400">
                 <span>Made with</span>
-                <Heart className="h-4 w-4 mx-1 text-red-500 fill-current" />
+                <span className="mx-1 text-red-500">❤️</span>
                 <span>using React & TypeScript</span>
               </div>
             </div>
@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
               className="flex items-center text-sm text-neutral-400 hover:text-primary-400 transition-colors duration-200 group"
             >
               <span className="mr-2">Back to top</span>
-              <ArrowUp className="h-4 w-4 group-hover:-translate-y-1 transition-transform duration-200" />
+              <span className="text-lg">↑</span>
             </button>
           </div>
         </div>

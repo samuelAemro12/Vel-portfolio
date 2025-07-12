@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+// import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 // import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
@@ -16,11 +16,9 @@ const Hero: React.FC = () => {
         {/* Main Content */}
         <div className="animate-fade-in">
           {/* Profile Image Placeholder */}
-          <div className="mb-8">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-primary-500 to-secondary-400 p-1">
-              <div className="w-full h-full rounded-full bg-neutral-100 flex items-center justify-center">
-                <span className="text-4xl font-bold text-gradient">SA</span>
-              </div>
+          <div className="profile-image">
+            <div className="profile-image-inner">
+              <span className="text-4xl font-bold text-gradient">SA</span>
             </div>
           </div>
 
@@ -39,28 +37,28 @@ const Hero: React.FC = () => {
           </p>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-6 mb-12">
+          <div className="social-links">
             <a
               href="https://github.com/samuelAemro12"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 text-neutral-700 hover:text-primary-500"
             >
-              <Github size={24} />
+              <span className="text-xl">📱</span>
             </a>
             <a
-              href="https://linkedin.com/in/samuel-aemro"
+              href="https://linkedin.com/in/samuel-aemro-911-598-356"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 text-neutral-700 hover:text-primary-500"
             >
-              <Linkedin size={24} />
+              <span className="text-xl">💼</span>
             </a>
             <a
               href="mailto:samuelaemrowork12@gmail.com"
               className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 text-neutral-700 hover:text-primary-500"
             >
-              <Mail size={24} />
+              <span className="text-xl">✉️</span>
             </a>
           </div>
 
@@ -71,9 +69,9 @@ const Hero: React.FC = () => {
               className="btn-primary group"
             >
               View My Projects
-              <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform duration-200" />
+              <span className="ml-2 text-sm">↓</span>
             </button>
-            
+
             <a
               href="/resume.pdf"
               target="_blank"
@@ -86,7 +84,7 @@ const Hero: React.FC = () => {
 
           {/* Scroll Indicator */}
           <div className="animate-bounce">
-            <ArrowDown className="mx-auto h-6 w-6 text-neutral-400" />
+            <span className="mx-auto block text-center text-neutral-400 text-2xl">↓</span>
           </div>
         </div>
       </div>

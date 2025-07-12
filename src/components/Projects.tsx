@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Star } from 'lucide-react';
+// import { ExternalLink, Github, Star } from 'lucide-react';
 import { featuredProjects } from '../data/projects';
 // import { motion } from 'framer-motion';
 
@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-16 h-16 mx-auto mb-3 bg-white rounded-full flex items-center justify-center shadow-lg">
-                      <Star className="h-8 w-8 text-primary-500" />
+                      <span className="text-2xl">⭐</span>
                     </div>
                     <p className="text-sm font-medium text-neutral-600">Project Preview</p>
                   </div>
@@ -47,7 +47,7 @@ const Projects: React.FC = () => {
                       rel="noopener noreferrer"
                       className="p-3 bg-white rounded-full hover:bg-neutral-100 transition-colors duration-200"
                     >
-                      <Github className="h-5 w-5 text-neutral-700" />
+                      <span className="text-lg">📱</span>
                     </a>
                     {project.liveUrl && (
                       <a
@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
                         rel="noopener noreferrer"
                         className="p-3 bg-white rounded-full hover:bg-neutral-100 transition-colors duration-200"
                       >
-                        <ExternalLink className="h-5 w-5 text-neutral-700" />
+                        <span className="text-lg">🔗</span>
                       </a>
                     )}
                   </div>
@@ -98,7 +98,7 @@ const Projects: React.FC = () => {
                     rel="noopener noreferrer"
                     className="flex items-center text-sm font-medium text-neutral-600 hover:text-primary-600 transition-colors duration-200"
                   >
-                    <Github className="h-4 w-4 mr-2" />
+                    <span className="mr-2">📱</span>
                     Code
                   </a>
                   {project.liveUrl && (
@@ -108,7 +108,7 @@ const Projects: React.FC = () => {
                       rel="noopener noreferrer"
                       className="flex items-center text-sm font-medium text-neutral-600 hover:text-primary-600 transition-colors duration-200"
                     >
-                      <ExternalLink className="h-4 w-4 mr-2" />
+                      <span className="mr-2">🔗</span>
                       Live Demo
                     </a>
                   )}
@@ -126,7 +126,7 @@ const Projects: React.FC = () => {
             rel="noopener noreferrer"
             className="btn-outline inline-flex items-center"
           >
-            <Github className="h-5 w-5 mr-2" />
+            <span className="mr-2">📱</span>
             View All Projects on GitHub
           </a>
         </div>

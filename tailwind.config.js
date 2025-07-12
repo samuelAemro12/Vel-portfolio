@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+// Temporarily disabled until Tailwind CSS is installed
+/* export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -75,4 +76,4 @@ export default {
     },
   },
   plugins: [],
-}
+} */

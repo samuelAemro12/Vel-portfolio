@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+// import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
 // import { motion } from 'framer-motion';
 
 const Contact: React.FC = () => {
@@ -36,19 +36,19 @@ const Contact: React.FC = () => {
 
   const contactInfo = [
     {
-      icon: <Mail className="h-6 w-6" />,
+      icon: <span className="text-xl">✉️</span>,
       label: 'Email',
       value: 'samuelaemrowork12@gmail.com',
       href: 'mailto:samuelaemrowork12@gmail.com'
     },
     {
-      icon: <Phone className="h-6 w-6" />,
+      icon: <span className="text-xl">📞</span>,
       label: 'Phone',
       value: '+ 251 902-329-031',
       href: 'tel:+251902329031'
     },
     {
-      icon: <MapPin className="h-6 w-6" />,
+      icon: <span className="text-xl">📍</span>,
       label: 'Location',
       value: 'Addis Ababa, Ethiopia',
       href: '#'
@@ -57,19 +57,19 @@ const Contact: React.FC = () => {
 
   const socialLinks = [
     {
-      icon: <Github className="h-6 w-6" />,
+      icon: <span className="text-xl">📱</span>,
       label: 'GitHub',
       href: 'https://github.com/samuelAemro12',
       color: 'hover:text-gray-900'
     },
     {
-      icon: <Linkedin className="h-6 w-6" />,
+      icon: <span className="text-xl">💼</span>,
       label: 'LinkedIn',
       href: 'https://linkedin.com/in/samuel-aemro-911-598-356',
       color: 'hover:text-blue-600'
     },
     {
-      icon: <Twitter className="h-6 w-6" />,
+      icon: <span className="text-xl">🐦</span>,
       label: 'Twitter',
       href: 'https://twitter.com/samuel_aemro',
       color: 'hover:text-blue-400'
@@ -217,7 +217,7 @@ const Contact: React.FC = () => {
                 className="btn-primary w-full group"
               >
                 Send Message
-                <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+                <span className="ml-2">📤</span>
               </button>
             </form>
           </div>

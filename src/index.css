@@ -1,5 +1,4 @@
-/* Temporarily commented out until Tailwind is installed */
-/* @import "tailwindcss"; */
+/* Tailwind CSS temporarily disabled - using custom styles instead */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import './temp-styles.css';

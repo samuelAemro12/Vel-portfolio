@@ -1,26 +1,26 @@
 import React from 'react';
-import { Code, Database, Brain, Globe } from 'lucide-react';
+// import { Code, Database, Brain, Globe } from 'lucide-react';
 // import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
   const highlights = [
     {
-      icon: <Code className="h-8 w-8" />,
+      icon: <span className="text-2xl">💻</span>,
       title: "Frontend Development",
       description: "Building responsive, interactive user interfaces with React, JavaScript, TypeScript, and modern CSS frameworks."
     },
     {
-      icon: <Database className="h-8 w-8" />,
+      icon: <span className="text-2xl">🗄️</span>,
       title: "Backend Integration",
       description: "Creating robust APIs and database solutions with Node.js, Express, Firestore and various MongoDb technologies."
     },
     {
-      icon: <Brain className="h-8 w-8" />,
+      icon: <span className="text-2xl">🧠</span>,
       title: "Machine Learning",
       description: "Exploring AI/ML applications with Python, Google Colab and data visualization libraries."
     },
     {
-      icon: <Globe className="h-8 w-8" />,
+      icon: <span className="text-2xl">🌐</span>,
       title: "API Integration",
       description: "Seamlessly connecting applications with third-party services and external APIs such as Stripe, Chapa, fakestoreAPI and The movie database ."
     }
