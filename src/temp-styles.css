@@ -1,0 +1,264 @@
+/* Temporary styles until Tailwind CSS is installed */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  color: #404040;
+  background-color: #fafafa;
+}
+
+/* Container */
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Section padding */
+.section-padding {
+  padding: 4rem 1rem;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav .container-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #a855f7, #f87171);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+nav a {
+  text-decoration: none;
+  color: #404040;
+  font-weight: 500;
+  margin: 0 1rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #a855f7;
+}
+
+/* Hero Section */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #fafafa 0%, #f3ecff 100%);
+  padding-top: 4rem;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #262626;
+  margin-bottom: 1rem;
+}
+
+#hero h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #a855f7, #f87171);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+}
+
+#hero p {
+  font-size: 1.125rem;
+  color: #525252;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #a855f7;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.btn-primary:hover {
+  background: #9333ea;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #a855f7;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #a855f7;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.btn-outline:hover {
+  background: #a855f7;
+  color: white;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Grid layouts */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Sections */
+section {
+  padding: 4rem 1rem;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #262626;
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #262626;
+  color: #d4d4d4;
+  padding: 3rem 1rem 1rem;
+}
+
+footer h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #a3a3a3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #a855f7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+  
+  #hero h2 {
+    font-size: 1.25rem;
+  }
+  
+  .grid-cols-2,
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  nav .desktop-nav {
+    display: none;
+  }
+}
+
+/* Hide mobile menu for now */
+.mobile-menu {
+  display: none;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #404040;
+  transition: all 0.2s;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  color: #a855f7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
